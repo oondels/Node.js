@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <%- include("./partials/head.ejs") %>
+  <body>
+    <%- include("./partials/nav.ejs") %>
+    
+    <h1>Hello Node.js</h1>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus error
+      quae nostrum. Dolor fuga alias rem, dolorum, ad earum placeat doloribus,
+      exercitationem incidunt laboriosam culpa impedit id asperiores minus nam.
+    </p>
+
+    <br>
+    <h2>Peoples</h2>
+
+    <% if(people.length >=1 ) { %>
+      <% people.forEach(person => { %>
+        <h3> <%= person.name %> </h2>
+        <p> <%= person.description %> </p>
+      <% }) %>
+    <% }else {%>
+      <p>Without Peoples</p>
+    <% } %>
+
+  </body>
+</html>
