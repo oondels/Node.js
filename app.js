@@ -9,6 +9,9 @@ app.set("view engine", "ejs");
 // listen for requests
 app.listen(3000);
 
+// Middleware & static files
+app.use(express.static("static"));
+
 // 3rd party Middleware to show information about request
 app.use(morgan("dev"));
 
