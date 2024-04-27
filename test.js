@@ -1,8 +1,5 @@
-const express = require("express");
-const app = express();
-
-app.listen(3000);
-
-app.get("/", (req, res) => {
-  res.sendFile(`${__dirname}/test.html`);
-});
+console.log("I’m learning about");
+setTimeout(() => {
+  console.log("Event Loop");
+}, 2000);
+console.log("the");
